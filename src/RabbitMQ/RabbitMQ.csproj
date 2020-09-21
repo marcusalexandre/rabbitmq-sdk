@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Nullable>enable</Nullable>
+    <Version>0.0.1</Version>
+    <AssemblyVersion>0.0.1.0</AssemblyVersion>
+    <FileVersion>0.0.1.0</FileVersion>
+    <Authors>Marcus Alexandre</Authors>
+    <Company>Marcus Alexandre</Company>
+    <Copyright>GNU General Public License v3.0</Copyright>
+    <Description>Support libraries for using RabbitMQ as Publisher / Subscriber for .Net Core</Description>
+    <PackageProjectUrl>https://github.com/marcusalexandre/rabbitmq-sdk/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/marcusalexandre/rabbitmq-sdk/</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>rabbitmq publisher subscriber</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <AssemblyName>rabbitmq-sdk</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.6" />
+  </ItemGroup>
+
+</Project>
